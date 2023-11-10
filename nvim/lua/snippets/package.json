@@ -1,0 +1,14 @@
+{
+  "contributes": {
+    "snippets": [
+      {
+        "language": "shell",
+        "path": "./shell.json"
+      },
+      {
+        "language": "html",
+        "path": "html.json"
+      }
+    ]
+  }
+}

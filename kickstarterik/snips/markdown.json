@@ -1,0 +1,9 @@
+{
+  "Cornell Note Template": { 
+		"prefix": "myTest",
+		"body": [
+      "(${1})=\"${2}\""
+		],
+		"description": "Cornell Note Template"
+	}
+}

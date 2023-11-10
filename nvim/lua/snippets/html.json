@@ -1,0 +1,12 @@
+{
+  "ec": {
+    "prefix": "ec",
+    "body": "echo \"${0:message}\"",
+    "description": "Echo a message."
+  },
+  "ngModel": {
+    "prefix": "[NgModel]",
+    "body": "[ngModel] = \"${0:attr}\"",
+    "description": "Insert NgModel atribute"
+  }
+}

@@ -17,6 +17,7 @@ return {
         { open = "(", close = ")" },
         { open = "[", close = "]" },
         { open = "{", close = "}" },
+        { open = "<", close = ">" },
       },
       ignore_beginning = true, --[[ if the cursor is at the beginning of a filled element it will rather tab out than shift the content ]]
       exclude = {},
@@ -27,14 +28,3 @@ return {
     "hrsh7th/nvim-cmp",
   },
 }
--- return {
--- {}
---   "abecodes/tabout.nvim",
---   enabled = true,
---   event = "InsertEnter",
---   dependencies = {
---     "nvim-treesitter/nvim-treesitter",
---     "hrsh7th/nvim-cmp",
---   },
---   config = true,
--- }

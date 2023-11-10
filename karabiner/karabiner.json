@@ -11,9 +11,9 @@
             "complex_modifications": {
                 "parameters": {
                     "basic.simultaneous_threshold_milliseconds": 50,
-                    "basic.to_delayed_action_delay_milliseconds": 50,
-                    "basic.to_if_alone_timeout_milliseconds": 500,
-                    "basic.to_if_held_down_threshold_milliseconds": 100,
+                    "basic.to_delayed_action_delay_milliseconds": 500,
+                    "basic.to_if_alone_timeout_milliseconds": 1000,
+                    "basic.to_if_held_down_threshold_milliseconds": 500,
                     "mouse_motion_to_scroll.speed": 100
                 },
                 "rules": []
@@ -58,6 +58,84 @@
                     },
                     "ignore": true,
                     "manipulate_caps_lock_led": false,
+                    "simple_modifications": [],
+                    "treat_as_built_in_keyboard": false
+                },
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": [],
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": false,
+                        "product_id": 12320,
+                        "vendor_id": 12625
+                    },
+                    "ignore": false,
+                    "manipulate_caps_lock_led": true,
+                    "simple_modifications": [
+                        {
+                            "from": {
+                                "apple_vendor_top_case_key_code": "keyboard_fn"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "right_control"
+                                }
+                            ]
+                        }
+                    ],
+                    "treat_as_built_in_keyboard": false
+                },
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": [],
+                    "identifiers": {
+                        "is_keyboard": false,
+                        "is_pointing_device": true,
+                        "product_id": 12320,
+                        "vendor_id": 12625
+                    },
+                    "ignore": true,
+                    "manipulate_caps_lock_led": false,
+                    "simple_modifications": [],
+                    "treat_as_built_in_keyboard": false
+                },
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": [],
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": true,
+                        "product_id": 28705,
+                        "vendor_id": 1256
+                    },
+                    "ignore": true,
+                    "manipulate_caps_lock_led": true,
+                    "simple_modifications": [
+                        {
+                            "from": {
+                                "apple_vendor_top_case_key_code": "keyboard_fn"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "left_control"
+                                }
+                            ]
+                        }
+                    ],
+                    "treat_as_built_in_keyboard": false
+                },
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": [],
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": true,
+                        "product_id": 43554,
+                        "vendor_id": 4661
+                    },
+                    "ignore": true,
+                    "manipulate_caps_lock_led": true,
                     "simple_modifications": [],
                     "treat_as_built_in_keyboard": false
                 }
